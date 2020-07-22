@@ -1,0 +1,15 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts/fonts.css);
+
+body{
+    background-color: wheat;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.one{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
