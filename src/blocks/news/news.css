@@ -1,0 +1,13 @@
+@import url(./_visible_none/news_visible_none.css);
+@import url(./__preloader/news__preloader.css);
+@import url(./__not-found/news__not-found.css);
+@import url(./__title-result/news__title-result.css);
+@import url(./__description/news__description.css);
+@import url(./__list/news__list.css);
+@import url(./__button/news__button.css);
+
+.news{
+  padding: 80px 0;
+  background-color: #F5F6F7;
+}
+

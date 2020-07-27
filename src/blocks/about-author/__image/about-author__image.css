@@ -1,0 +1,8 @@
+.about-author__image{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: relative;
+}

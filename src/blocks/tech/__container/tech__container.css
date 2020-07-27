@@ -1,0 +1,6 @@
+.tech__container{
+  display: grid;
+  grid-template-columns: 344px 1fr;
+  grid-column-gap: 178px;
+
+}

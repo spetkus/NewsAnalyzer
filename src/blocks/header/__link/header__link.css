@@ -1,0 +1,21 @@
+.header__link {
+  display: block;
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  margin-left: 34px;
+  color: #b6bcbf;
+  text-decoration: none;
+  transition: color 0.4s;
+  padding-top: 30px;
+  padding-bottom: 26px;
+}
+
+.header__link:hover {
+  color: #1a1b22;
+}
+
+

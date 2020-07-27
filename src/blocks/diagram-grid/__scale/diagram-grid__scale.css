@@ -1,0 +1,8 @@
+.diagram-grid__scale {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  grid-column-start: span 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: space-between;
+}

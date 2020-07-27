@@ -1,0 +1,12 @@
+.github-commits__button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: calc(-1*var(--swiper-navigation-size)/2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

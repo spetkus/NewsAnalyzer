@@ -1,0 +1,5 @@
+.github-card__person{
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}

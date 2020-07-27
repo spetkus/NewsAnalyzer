@@ -1,0 +1,10 @@
+.news-card__name {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+}

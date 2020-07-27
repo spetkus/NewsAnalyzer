@@ -1,15 +1,15 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts/fonts.css);
-
-body{
-    background-color: wheat;
-}
-
-h1{
-    font-size: 24px;
-}
-
-.one{
-    font-family: 'Roboto';
-    font-weight: 400;
-}
+@import url(../../blocks/root/root.css);
+@import url(../../blocks/grid-width/grid-width.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/text-title/text-title.css);
+@import url(../../blocks/text-paragraph/text-paragraph.css);
+@import url(../../blocks/clients/clients.css);
+@import url(../../blocks/about-author/about-author.css);
+@import url(../../blocks/tech/tech.css);
+@import url(../../blocks/icon-feature/icon-feature.css);
+@import url(../../blocks/github-commits/github-commits.css);
+@import url(../../blocks/title-block/title-block.css);
+@import url(../../blocks/github-card/github-card.css);
+@import url(../../blocks/footer/footer.css);

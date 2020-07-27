@@ -1,0 +1,9 @@
+@import url(./__link/title-block__link.css);
+
+.title-block{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 64px;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+.github-commits__slide {
+  width: 400px;
+  display: block;
+  flex-shrink: 0;
+  height: 300px;
+  position: relative;
+  transition-property: transform, -webkit-transform;
+}

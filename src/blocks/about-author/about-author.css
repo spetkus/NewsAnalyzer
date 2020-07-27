@@ -1,0 +1,10 @@
+@import url(./__image/about-author__image.css);
+@import url(./__info/about-author__info.css);
+
+.about-author{
+  display: grid;
+  grid-template-columns: minmax(150px, 464px) 1fr;
+  grid-column-gap: 56px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

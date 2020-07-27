@@ -1,0 +1,11 @@
+.button{
+    font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}

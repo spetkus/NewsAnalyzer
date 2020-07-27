@@ -1,0 +1,7 @@
+.news__not-found{
+  content: url('../../../images/not-found.svg');
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  display: block;
+}

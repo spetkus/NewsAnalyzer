@@ -1,0 +1,17 @@
+.news__button {
+  padding: 21px 84px;
+  color: #1a1b22;
+  position: relative;
+  margin: 64px auto 0 auto;
+  background-color: #fff;
+  border-radius: 80px;
+  transition: opacity .4s;
+}
+
+.news__button:hover {
+  opacity: 0.9;
+}
+
+.news__button:active{
+  opacity: 0.6;
+}
