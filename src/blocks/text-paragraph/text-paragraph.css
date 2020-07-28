@@ -1,17 +1,17 @@
 @import url('./__span/text-paragraph__span.css');
 
-.text-paragraph{
-    font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1A1B22;
-    margin-top: 24px;
-    margin-bottom: 0;
+.text-paragraph {
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 
-.text-paragraph:last-of-type{
-    margin-bottom: 0;
+.text-paragraph:last-of-type {
+  margin-bottom: 0;
 }

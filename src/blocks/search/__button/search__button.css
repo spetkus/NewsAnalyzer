@@ -17,3 +17,18 @@
 .search__button:active{
     background-color: #2A65CC;
 }
+
+@media only screen and (max-width: 1025px) {
+  .search__button {
+    padding: 17px 50px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .search__button {
+    position: relative;
+    margin-top: 22px;
+    width: 100%;
+    padding: 17px 113px;
+  }
+}

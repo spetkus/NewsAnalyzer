@@ -19,3 +19,21 @@
 }
 
 
+@media only screen and (max-width: 1025px) {
+  .header__link {
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 710px) {
+  .header__link {
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 11px;
+  }
+}
+
+

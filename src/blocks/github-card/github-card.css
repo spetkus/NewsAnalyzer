@@ -22,3 +22,17 @@
   box-shadow: 0px 10px 8px -3px rgba(8, 29, 45, 0.1);
 }
 
+@media only screen and (max-width: 1025px) {
+  .github-card {
+    width: 288px;
+    height: 194px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .github-card {
+    width: 240px;
+    height: 216px;
+  }
+}
+

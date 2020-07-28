@@ -9,3 +9,16 @@
     max-width: 608px;
     margin: 0 auto;
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .search {
+    max-width: 452px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .search {
+    width: calc(100% - 32px);
+  }
+}

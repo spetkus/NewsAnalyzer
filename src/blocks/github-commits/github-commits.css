@@ -7,12 +7,19 @@
 @import url('./__button/github-commits__button.css');
 @import url('./__button/_type/_next/github-commits__button_type_next.css');
 @import url('./__button/_type/_prev/github-commits__button_type_prev.css');
+@import url('./__button-link/github-commits__button-link.css');
 @import url('./__pagination/github-commits__pagination.css');
 @import url('./__pagination-bullet/__pagination-bullet.css');
 @import url('./__pagination-bullet/_type/_active/github-commits__pagination-bullet_type_active.css');
 
-.github-commits{
+.github-commits {
   display: block;
   padding: 72px 0 80px 0;
   background-color: #F5F6F7;
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-commits {
+    padding: 40px 0 40px 0;
+  }
 }

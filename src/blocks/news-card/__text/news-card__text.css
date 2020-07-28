@@ -16,6 +16,20 @@
   text-overflow: ellipsis;
 }
 
+@media only screen and (max-width: 1025px) {
+  .news-card__text {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .news-card__text {
+    -webkit-line-clamp: 4;
+    line-height: 22px;
+    max-height: 88px;
+  }
+}
+
 
 
 

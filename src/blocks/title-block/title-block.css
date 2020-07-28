@@ -1,4 +1,5 @@
-@import url(./__link/title-block__link.css);
+@import url('./__link/title-block__link.css');
+@import url('./__link/_mob-visible_none/title-block__link_mob-visible_none.css');
 
 .title-block{
   display: flex;
@@ -7,3 +8,18 @@
   margin-bottom: 64px;
   align-items: center;
 }
+
+@media only screen and (max-width: 1025px) {
+  .title-block {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .title-block {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+}
+

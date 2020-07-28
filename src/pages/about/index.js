@@ -3,13 +3,26 @@ import Swiper from "swiper/bundle";
 import "../about/about.css";
 
 const swiper = new Swiper(".github-commits__cards-list", {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 16,
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 8
+    },
+    710: {
+      slidesPerView: "auto",
+      spaceBetween: 4,
+    },
+    1025: {
+      slidesPerView: "auto",
+      spaceBetween: 16
+    }
+  },
+  loop: true,
+  centeredSlides: true,
   wrapperClass: "github-commits__wrapper",
   slideClass: "github-commits__slide",
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
   pagination: {
     el: ".github-commits__pagination",
     bulletClass: "github-commits__pagination-bullet",
@@ -19,5 +32,5 @@ const swiper = new Swiper(".github-commits__cards-list", {
   navigation: {
     nextEl: ".github-commits__button_type_next",
     prevEl: ".github-commits__button_type_prev",
-  },
+  }
 });

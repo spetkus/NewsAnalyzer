@@ -15,3 +15,18 @@
 .news__button:active{
   opacity: 0.6;
 }
+
+@media only screen and (max-width: 1025px) {
+  .news__button {
+    padding: 17px 60px;
+    margin: 32px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .news__button {
+    padding: 17px 0;
+    width: calc(100% - 32px);
+    margin: 12px auto 0 auto;
+  }
+}

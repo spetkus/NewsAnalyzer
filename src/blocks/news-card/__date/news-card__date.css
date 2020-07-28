@@ -1,4 +1,4 @@
-.news-card__date{
+.news-card__date {
   font-family: 'Source Sans Pro', 'Helvetica NeueCyr', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -7,5 +7,11 @@
   margin-top: 20px;
   margin-bottom: 0;
   color: #b6bcbf;
+}
+
+@media only screen and (max-width: 1025px) {
+  .news-card__date  {
+    margin-top: 16px;
+  }
 }
 

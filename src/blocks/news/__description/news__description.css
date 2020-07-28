@@ -6,3 +6,10 @@
   margin-right: auto;
   position: relative;
 }
+
+@media only screen and (max-width: 1025px) {
+  .news__description{
+    margin-top: 12px;
+  }
+}
+

@@ -1,15 +1,32 @@
-.footer__link{
-    font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1A1B22;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    transition: opacity .4s;
+.footer__link {
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: opacity .4s;
 }
 
-.footer__link:hover{
-    opacity: .7;
+.footer__link:hover {
+  opacity: .7;
+}
+
+@media only screen and (max-width: 1025px) {
+  .footer__link {
+    font-family: 'Source Sans Pro', 'Helvetica NeueCyr', Arial, sans-serif;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .footer__link {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+    display: block;
+  }
 }

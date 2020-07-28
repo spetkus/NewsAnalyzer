@@ -18,3 +18,11 @@
 		transform: rotate(360deg);
 	}
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .news__preloader {
+    width: 48px;
+    height: 48px;
+  }
+}

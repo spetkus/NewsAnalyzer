@@ -3,3 +3,17 @@
   grid-template-columns: repeat(auto-fill, 120px);
   grid-column-gap: 40px;
 }
+
+@media only screen and (max-width: 1180px) {
+  .tech__feature {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .tech__feature {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 42px;
+  }
+}
+

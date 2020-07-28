@@ -12,16 +12,23 @@
 }
 
 .search__input:focus{
-  box-shadow: inset 0px 0px 7px 3px rgba(52,126,255,0.4);
+  box-shadow: inset 0px 0px 7px 3px rgba(52,126,255, 0.4);
 }
 
 .search__input:valid:not(:placeholder-shown) {
-	border-color: green;
+	box-shadow: inset 0px 0px 7px 3px rgba(30,230,100, 0.4);
 }
 
 .search__inputt:invalid:not(:placeholder-shown) {
-	border-color: red;
+	box-shadow: inset 0px 0px 7px 3px rgba(230,32,42, 0.4);
 }
+
 .search__input:invalid:not(:placeholder-shown) + .search__form-error{
 	display: block;
+}
+
+@media only screen and (max-width: 1025px) {
+  .search__input {
+    padding: 17px 24px 17px;
+  }
 }

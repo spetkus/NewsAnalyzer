@@ -7,3 +7,9 @@
   list-style: none;
   display: flex;
 }
+
+@media only screen and (max-width: 710px) {
+  .breadcrumb {
+    display: none;
+  }
+}

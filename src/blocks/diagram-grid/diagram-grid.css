@@ -8,3 +8,15 @@
   grid-template-columns: 56px 1fr;
   grid-gap: 56px 48px;
 }
+
+@media only screen and (max-width: 1025px) {
+  .diagram-grid {
+    grid-gap: 56px 60px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .diagram-grid {
+    grid-gap: 24px 30px;
+  }
+}

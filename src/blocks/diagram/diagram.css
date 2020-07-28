@@ -5,3 +5,15 @@
   padding: 80px 0 80px 0;
   background-color: #f5f6f7;
 }
+
+@media only screen and (max-width: 1025px) {
+  .diagram {
+    padding: 40px 0 40px 0;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .diagram {
+    padding: 24px 0 38px 0;
+  }
+}

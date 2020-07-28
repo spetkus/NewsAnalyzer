@@ -5,3 +5,9 @@
   position: absolute;
   top: 0;
 }
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__gradient{
+    display: none;
+  }
+}

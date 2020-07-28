@@ -52,7 +52,7 @@
             maxlength="20"
             novalidate
             required />
-          <span class="search__form-error">Это обязательное поле. Введите запрос от 4 до 20 символов</span>
+          <span class="search__form-error">Введите запрос от 4 до 20 символов</span>
           <button type="button" class="button search__button">Искать</button>
         </form>
       </section>
@@ -216,10 +216,10 @@
     <section class="grid-width about-author">
       <picture class="about-author__image">
         <source
-          media="(max-width: 420px)"
+          media="(max-width: 690px)"
           srcset="<%=require('./images/author_272px.png').default%>" />
         <source
-          media="(max-width: 769px)"
+          media="(max-width: 1025px)"
           srcset="<%=require('./images/author_232px.png').default%>" />
         <img
           src="<%=require('./images/author.png').default%>"
@@ -229,12 +229,12 @@
         <h2 class="text-title">
           Об авторе
         </h2>
-        <p class="text-paragraph">
+        <p class="text-paragraph about-author__paragraph">
           Это блок с описанием автора проекта. Здесь следует указать, как
           вас зовут, чем вы занимаетесь, какими технологиями разработки
           владеете.
         </p>
-        <p class="text-paragraph">
+        <p class="text-paragraph about-author__paragraph">
           Также можно рассказать о процессе обучения в Практикуме, чему вы
           тут научились, и чем можете помочь потенциальным заказчикам.
         </p>
@@ -248,10 +248,10 @@
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a href="./index.html" class="footer__link" target="_blank">Главная</a>
+            <a href="./index.html" class="footer__link">Главная</a>
           </li>
           <li>
-            <a href="./about.html" class="footer__link" target="_blank">О проекте</a>
+            <a href="./about.html" class="footer__link">О проекте</a>
           </li>
           <li>
             <a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a>

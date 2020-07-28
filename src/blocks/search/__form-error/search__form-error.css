@@ -11,6 +11,11 @@
   left: 24px;
 }
 
+@media only screen and (max-width: 710px) {
+  .search__form-error {
+    top: 58px;
+  }
+}
 
 
 

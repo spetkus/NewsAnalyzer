@@ -6,3 +6,15 @@
   transform: translateZ(0);
   z-index: 10;
 }
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__pagination {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__pagination {
+    margin-top: 8px;
+  }
+}

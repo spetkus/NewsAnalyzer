@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1025px) {
+  .about-author__paragraph:first-of-type {
+    margin-top: 16px;
+  }
+
+  .about-author__paragraph{
+    margin-top: 0;
+  }
+}

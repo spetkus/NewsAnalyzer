@@ -5,3 +5,10 @@
   margin: 0 auto;
   display: block;
 }
+
+@media only screen and (max-width: 1025px) {
+  .news__not-found {
+    width: 64px;
+    height: 64px;
+  }
+}

@@ -1,5 +1,19 @@
-.search__subtitle{
-    max-width: 545px;
-    color: #ffffff;
-    margin-top: 32px;
+.search__subtitle {
+  max-width: 545px;
+  color: #ffffff;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .search__subtitle {
+    max-width: 452px;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .search__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

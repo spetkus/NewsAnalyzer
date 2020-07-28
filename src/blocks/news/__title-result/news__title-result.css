@@ -9,3 +9,9 @@
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1025px) {
+  .news__title-result{
+    margin-top: 16px;
+  }
+}
+

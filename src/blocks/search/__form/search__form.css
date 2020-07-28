@@ -2,3 +2,15 @@
     position: relative;
     margin-top: 64px;
 }
+
+@media only screen and (max-width: 1025px) {
+  .search__form {
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .search__form {
+    margin-top: 64px;
+  }
+}

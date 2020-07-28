@@ -1,10 +1,32 @@
 .grid-width {
-  max-width: 1240px;
+  max-width: 1232px;
   margin: 0 auto;
 }
 
+
 @media only screen and (max-width: 1300px) {
   .grid-width {
-    width: calc(100% - 80px);
+    /* width: calc(100% - 32px); */
+    width: calc(100% - 20px);
   }
 }
+
+@media only screen and (max-width: 1270px) {
+  .grid-width {
+    width: calc(100% - 48px);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .grid-width {
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .grid-width {
+    width: calc(100% - 32px);
+  }
+}
+
+
