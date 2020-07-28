@@ -12,8 +12,10 @@
 
 **Особенности проекта:**
 ----------
- 1.  Сборка  WebPack = (`Babel, Autoprefixer, PostCSS, gh-pages, html-webpack-plugin, image-webpack-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin cross-env, css-loader, cssnano, style-loader file-loader и др.`)
- 2.  В разработке...
+ 1.  Проект написан на нативном JavaScript
+ 2.  Используется ООП подход
+ 3.  Для работы с данными используется REST API
+ 4.  Сборка  WebPack = (`Babel, Autoprefixer, PostCSS, gh-pages, html-webpack-plugin, image-webpack-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin cross-env, css-loader, cssnano, style-loader file-loader и др.`)
 
 **Реализованный функционал:**
 ----------
