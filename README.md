@@ -7,8 +7,8 @@
 
 ## Описание проекта "News Analyzer"
 
-В разработке...
-Ссылка на  **GitHub Pages** - [перейти](https://spetkus.github.io/NewsAnalyzer/)
+- В разработке...
+- Ссылка на  **GitHub Pages** - [перейти](https://spetkus.github.io/NewsAnalyzer/)
 
 **Особенности проекта:**
 ----------
