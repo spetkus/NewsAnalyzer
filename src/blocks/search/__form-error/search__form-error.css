@@ -1,0 +1,21 @@
+.search__form-error {
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: left;
+  font-size: 12px;
+  line-height: 22px;
+  display: none;
+  position: absolute;
+  bottom: -24px;
+  left: 24px;
+}
+
+@media only screen and (max-width: 710px) {
+  .search__form-error {
+    top: 58px;
+  }
+}
+
+
+

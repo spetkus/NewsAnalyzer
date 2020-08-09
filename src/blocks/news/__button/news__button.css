@@ -1,0 +1,32 @@
+.news__button {
+  padding: 21px 84px;
+  color: #1a1b22;
+  position: relative;
+  margin: 64px auto 0 auto;
+  background-color: #fff;
+  border-radius: 80px;
+  transition: opacity .4s;
+}
+
+.news__button:hover {
+  opacity: 0.9;
+}
+
+.news__button:active{
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1025px) {
+  .news__button {
+    padding: 17px 60px;
+    margin: 32px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .news__button {
+    padding: 17px 0;
+    width: calc(100% - 32px);
+    margin: 12px auto 0 auto;
+  }
+}

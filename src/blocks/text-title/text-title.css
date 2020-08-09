@@ -1,0 +1,29 @@
+.text-title{
+  font-family: 'Roboto Slab', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .text-title {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 336px;
+  }
+}
+
+
+@media only screen and (max-width: 710px) {
+  .text-title {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 288px;
+  }
+}
+
+

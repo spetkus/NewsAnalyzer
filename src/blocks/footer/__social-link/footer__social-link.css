@@ -1,0 +1,11 @@
+.footer__social-link{
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  align-items: center;
+  transition: all .4s ease-out;
+}
+
+.footer__social-link:hover{
+  transform: translateY(-5px);
+}

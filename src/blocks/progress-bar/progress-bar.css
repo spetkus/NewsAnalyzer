@@ -1,0 +1,15 @@
+@import url('./__number/progress-bar__number.css');
+@import url('./_width/_11/progress-bar_width_11.css');
+@import url('./_width/_15/progress-bar_width_15.css');
+@import url('./_width/_18/progress-bar_width_18.css');
+@import url('./_width/_34/progress-bar_width_34.css');
+@import url('./_width/_39/progress-bar_width_39.css');
+@import url('./_width/_45/progress-bar_width_45.css');
+@import url('./_width/_73/progress-bar_width_73.css');
+
+
+.progress-bar {
+  display: flex;
+  color: #fff;
+  background-color: #2f71e5;
+}

@@ -1,0 +1,12 @@
+.header__link_active{
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 26px;
+}
+
+
+@media only screen and (max-width: 710px) {
+  .header__link_active {
+    padding-bottom: 13px;
+  }
+}

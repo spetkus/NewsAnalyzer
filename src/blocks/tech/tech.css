@@ -1,0 +1,22 @@
+@import url('./__container/tech__container.css');
+@import url('./__feature/tech__feature.css');
+
+.tech {
+  display: block;
+  padding: 80px 0 88px 0;
+  background-color: #F5F6F7;
+}
+
+@media only screen and (max-width: 1025px) {
+  .tech {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .tech {
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+}

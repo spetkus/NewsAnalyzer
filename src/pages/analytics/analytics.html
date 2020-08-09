@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Sergey Petkus" />
+  <meta name="description" content="News Analyzer - Дипломная работа в Яндекс.Практикум" />
+  <title>NewsAnalyzer - Аналитика</title>
+  <link rel="icon" type="image/svg+xml" href="<%=require('../../images/favicon.svg').default%>" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>" />
+</head>
+
+<body>
+  <div class="root">
+
+    <!-- HEADER NAV BLOCK -->
+
+    <header class="header header_theme_dark">
+      <nav class="grid-width header__nav">
+        <img
+          src="<%=require('../../images/logo-dark.svg').default%>"
+          alt="Логотип проекта"
+          class="header__logo" />
+        <ul class="header__links">
+          <li>
+            <a href="./index.html" class="header__link">Главная</a>
+          </li>
+          <li>
+            <a href="./about.html" class="header__link">О проекте</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SEARCH-STATISTICS BLOCK -->
+
+    <main class="search-statistics grid-width">
+      <ul class="breadcrumb">
+        <li class="breadcrumb__element">
+          <a class="breadcrumb__link" href="./index.html">Главная</a>
+        </li>
+        <li class="breadcrumb__element">Аналитика</li>
+      </ul>
+
+      <h1 class="text-title search-statistics__title">
+        Вы спросили: «Путешествия»
+      </h1>
+      <p class="text-paragraph search-statistics__info">
+        Новостей за неделю: <span class="text-paragraph__span">34 324</span>
+      </p>
+      <p class="text-paragraph search-statistics__info">
+        Упоминаний в загаловках:
+        <span class="text-paragraph__span">235</span>
+      </p>
+    </main>
+
+    <!-- DIAGRAM BLOCK -->
+
+    <section class="diagram">
+      <div class="grid-width">
+        <h2 class="diagram__title">Аналитика по дням</h2>
+
+        <div class="diagram-grid diagram-grid_line_bottom">
+          <p class="diagram-grid__text-markup">Дата (<span>август</span>)</p>
+          <p class="diagram-grid__text-markup">Кол-во упоминаний</p>
+        </div>
+
+        <div class="diagram-grid">
+          <div class="diagram-grid__scale">
+            <p class="diagram-grid__text-markup">0</p>
+            <p class="diagram-grid__text-markup">25</p>
+            <p class="diagram-grid__text-markup">50</p>
+            <p class="diagram-grid__text-markup">75</p>
+            <p class="diagram-grid__text-markup">100</p>
+          </div>
+        </div>
+
+        <div class="diagram-grid">
+          <p class="text-paragraph diagram-grid__day">19, пн</p>
+          <div class="progress-bar progress-bar_width_15">
+            <span class="progress-bar__number">15</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">20, вт</p>
+          <div class="progress-bar progress-bar_width_18">
+            <span class="progress-bar__number">18</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">21, ср</p>
+          <div class="progress-bar progress-bar_width_11">
+            <span class="progress-bar__number">11</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">22, чт</p>
+          <div class="progress-bar progress-bar_width_39">
+            <span class="progress-bar__number">39</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">23, пт</p>
+          <div class="progress-bar progress-bar_width_45">
+            <span class="progress-bar__number">45</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">24, сб</p>
+          <div class="progress-bar progress-bar_width_73">
+            <span class="progress-bar__number">73</span>
+          </div>
+          <p class="text-paragraph  diagram-grid__day">25, вс</p>
+          <div class="progress-bar progress-bar_width_34">
+            <span class="progress-bar__number">34</span>
+          </div>
+        </div>
+
+        <div class="diagram-grid">
+          <div class="diagram-grid__scale">
+            <p class="diagram-grid__text-markup">0</p>
+            <p class="diagram-grid__text-markup">25</p>
+            <p class="diagram-grid__text-markup">50</p>
+            <p class="diagram-grid__text-markup">75</p>
+            <p class="diagram-grid__text-markup">100</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER BLOCK -->
+
+    <footer class="grid-width footer">
+      <p class="footer__copyright">2020 Петкус Сергей</p>
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li>
+            <a href="./index.html" class="footer__link">Главная</a>
+          </li>
+          <li>
+            <a href="./about.html" class="footer__link">О проекте</a>
+          </li>
+          <li>
+            <a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-links">
+        <li>
+          <a
+            href="https://github.com/spetkus"
+            class="footer__social-link footer__social-link_icon_github"
+            target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://ru-ru.facebook.com/yandex.praktikum/"
+            class="footer__social-link footer__social-link_icon_facebook"
+            target="_blank">Facebook</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
+
+</html>

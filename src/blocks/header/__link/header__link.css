@@ -1,0 +1,39 @@
+.header__link {
+  display: block;
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  margin-left: 34px;
+  color: #b6bcbf;
+  text-decoration: none;
+  transition: color 0.4s;
+  padding-top: 30px;
+  padding-bottom: 26px;
+}
+
+.header__link:hover {
+  color: #1a1b22;
+}
+
+
+@media only screen and (max-width: 1025px) {
+  .header__link {
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 710px) {
+  .header__link {
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 11px;
+  }
+}
+
+

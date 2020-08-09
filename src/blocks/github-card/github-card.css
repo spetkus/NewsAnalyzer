@@ -1,0 +1,38 @@
+@import url('./__date/github-card__date.css');
+@import url('./__person/github-card__person.css');
+@import url('./__person-image/github-card__person-image.css');
+@import url('./__person-info/github-card__person-info.css');
+@import url('./__person-name/github-card__person-name.css');
+@import url('./__person-email/github-card__person-email.css');
+@import url('./__description/github-card__description.css');
+
+.github-card{
+  width: 352px;
+  height: 240px;
+  background-color: #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #1a1b22;
+  padding: 24px 24px 24px;
+  display: block;
+  transition: all .5s ease-out;
+}
+
+.github-card:hover{
+  box-shadow: 0px 10px 8px -3px rgba(8, 29, 45, 0.1);
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-card {
+    width: 288px;
+    height: 194px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .github-card {
+    width: 240px;
+    height: 216px;
+  }
+}
+

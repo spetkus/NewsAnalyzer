@@ -1,0 +1,20 @@
+.github-commits__pagination {
+  position: relative;
+  margin-top: 36px;
+  text-align: center;
+  transition: opacity 0.3s;
+  transform: translateZ(0);
+  z-index: 10;
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__pagination {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__pagination {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,21 @@
+.news-card__media {
+  margin: 0;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-family: 'Roboto Slab', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+}
+
+@media only screen and (max-width: 1025px) {
+  .news-card__media  {
+    bottom: 16px;
+    left: 16px;
+  }
+}

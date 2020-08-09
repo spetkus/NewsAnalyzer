@@ -1,0 +1,16 @@
+.github-card__person-name {
+  font-family: 'Roboto Slab', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-card__person-name {
+    font-size: 20px;
+  }
+}

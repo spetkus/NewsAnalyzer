@@ -1,0 +1,5 @@
+@media only screen and (max-width: 710px) {
+  .title-block__link_mob-visible_none {
+    display: none;
+  }
+}

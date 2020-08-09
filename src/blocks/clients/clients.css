@@ -1,0 +1,20 @@
+@import url('./__information/clients__information.css');
+
+.clients{
+  padding-top: 80px;
+  padding-bottom: 94px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .clients  {
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .clients  {
+    padding-top: 16px;
+    padding-bottom: 36px;
+  }
+}

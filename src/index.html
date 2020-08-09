@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Sergey Petkus" />
+  <meta name="description" content="News Analyzer - Дипломная работа в Яндекс.Практикум" />
+  <title>NewsAnalyzer - Главная</title>
+  <link rel="icon" type="image/svg+xml" href="<%=require('./images/favicon.svg').default%>" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+</head>
+
+<body>
+  <div class="root">
+    <div class="background-container">
+
+      <!-- HEADER NAV BLOCK -->
+
+      <header class="header header_theme_white">
+        <nav class="grid-width header__nav">
+          <img
+            src="<%=require('./images/logo-white.svg').default%>"
+            alt="Логотип проекта"
+            class="header__logo" />
+          <ul class="header__links">
+            <li>
+              <a href="./index.html" class="header__link header__link_active">Главная</a>
+            </li>
+            <li>
+              <a href="./about.html" class="header__link">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SECTION SEARCH BLOCK -->
+
+      <section class="search">
+        <h1 class="search__title">Что в мире творится?</h1>
+        <p class="text-paragraph search__subtitle">
+          Введите в поиске любую тему и узнайте, насколько популярной она была
+          в новостях за прошедшую неделю.
+        </p>
+        <form class="search__form">
+          <input
+            type="text"
+            name="text"
+            class="search__input"
+            placeholder="Введите тему новости"
+            minlength="4"
+            maxlength="20"
+            required />
+          <span class="search__form-error">Введите запрос от 4 до 20 символов</span>
+          <button type="button" class="button search__button">Искать</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- NEWS PRELOADER BLOCK-->
+
+    <section class="news news_visible_none">
+      <i class="news__preloader"></i>
+      <h2 class="text-paragraph news__description">
+        Идет поиск новостей...
+      </h2>
+    </section>
+
+    <!-- NEWS NOT FOUND BLOCK-->
+
+    <section class="news news_visible_none">
+      <i class="news__not-found"></i>
+      <h2 class="news__title-result">Ничего не найдено</h2>
+      <p class="text-paragraph news__description">
+        К сожалению по вашему запросу ничего не найдено.
+      </p>
+    </section>
+
+    <!-- NEWS RESULT BLOCK-->
+
+    <main class="news">
+
+      <div class="grid-width title-block">
+        <h2 class="text-title">Результаты поиска</h2>
+        <a class="title-block__link" href="./analytics.html">Посмотреть аналитику</a>
+      </div>
+
+      <ul class="grid-width news__list">
+        <li>
+          <a class="news-card" href="https://lenta.ru/" target="_blank">
+            <img
+              class="news-card__image"
+              src="<%=require('./images/01.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                Национальное достояние – парки
+              </h3>
+              <p class="news-card__text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад
+                здесь начала складываться система национальных парков –
+                охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="news-card__media">Лента.ру</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="news-card" href="https://meduza.io/" target="_blank">
+            <img
+              class="news-card__image"
+              src="<%=require('./images/02.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                Лесные огоньки: история одной фотографии
+              </h3>
+              <p class="news-card__text">
+                Фотограф отвлеклась от освещения суровой политической
+                реальности Мексики, чтобы запечатлеть ускользающую красоту
+                одного из местных чудес природы.
+              </p>
+              <p class="news-card__media">Медуза</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="news-card" href="https://ria.ru/" target="_blank">
+            <img
+              class="news-card__image"
+              src="<%=require('./images/03.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+              </h3>
+              <p class="news-card__text">
+                Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения. В этот раз
+                он отправился в Двинско-Пинежскую тайгу, где...
+              </p>
+              <p class="news-card__media">Риа</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="news-card" href="https://zen.yandex.ru/" target="_blank">
+            <img
+              class="news-card__image"
+              src="<%=require('./images/04.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                Национальное достояние – парки
+              </h3>
+              <p class="news-card__text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад
+                здесь начала складываться система национальных парков –
+                охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="news-card__media">Дзен</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="news-card" href="https://www.afisha.ru/" target="_blank">
+            <img
+              class="news-card__image"
+              src="<%=require('./images/05.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                Лесные огоньки: история одной фотографии
+              </h3>
+              <p class="news-card__text">
+                Фотограф отвлеклась от освещения суровой политической
+                реальности Мексики, чтобы запечатлеть ускользающую красоту
+                одного из местных чудес природы.
+              </p>
+              <p class="news-card__media">Афиша</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="news-card" href="https://zona.media/" target="_blank">
+            <img class="news-card__image" src="<%=require('./images/06.png').default%>"
+              alt="Фотография превью новости" />
+            <div class="news-card__description">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__name">
+                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+              </h3>
+              <p class="news-card__text">
+                Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения. В этот раз
+                он отправился в Двинско-Пинежскую тайгу, где...
+              </p>
+              <p class="news-card__media">Медиазона</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <button class="button news__button">Показать еще</button>
+    </main>
+
+    <!-- ABOUT-AUTHOR BLOCK -->
+
+    <section class="grid-width about-author">
+      <picture class="about-author__image">
+        <source
+          media="(max-width: 690px)"
+          srcset="<%=require('./images/author_272px.png').default%>" />
+        <source
+          media="(max-width: 1025px)"
+          srcset="<%=require('./images/author_232px.png').default%>" />
+        <img
+          src="<%=require('./images/author.png').default%>"
+          alt="Фотография Front-end разработчика" />
+      </picture>
+      <div class="about-author__info">
+        <h2 class="text-title">
+          Об авторе
+        </h2>
+        <p class="text-paragraph about-author__paragraph">
+          Это блок с описанием автора проекта. Здесь следует указать, как
+          вас зовут, чем вы занимаетесь, какими технологиями разработки
+          владеете.
+        </p>
+        <p class="text-paragraph about-author__paragraph">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы
+          тут научились, и чем можете помочь потенциальным заказчикам.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER BLOCK -->
+
+    <footer class="grid-width footer">
+      <p class="footer__copyright">2020 Петкус Сергей</p>
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li>
+            <a href="./index.html" class="footer__link">Главная</a>
+          </li>
+          <li>
+            <a href="./about.html" class="footer__link">О проекте</a>
+          </li>
+          <li>
+            <a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-links">
+        <li>
+          <a
+            href="https://github.com/spetkus"
+            class="footer__social-link footer__social-link_icon_github"
+            target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://ru-ru.facebook.com/yandex.praktikum/"
+            class="footer__social-link footer__social-link_icon_facebook"
+            target="_blank">Facebook</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

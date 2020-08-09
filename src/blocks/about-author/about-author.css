@@ -1,0 +1,29 @@
+@import url('./__image/about-author__image.css');
+@import url('./__info/about-author__info.css');
+@import url('./__paragraph/about-author__paragraph.css');
+
+.about-author{
+  display: grid;
+  grid-template-columns: minmax(150px, 464px) 1fr;
+  grid-column-gap: 56px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .about-author {
+    grid-template-columns: minmax(150px, 232px) 1fr;
+    grid-column-gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .about-author {
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

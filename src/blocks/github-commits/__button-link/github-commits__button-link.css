@@ -1,0 +1,30 @@
+.github-commits__button-link {
+  display: none;
+}
+
+@media only screen and (max-width: 710px) {
+  .github-commits__button-link {
+    padding: 17px 0;
+    width: calc(100% - 32px);
+    margin: 24px auto 0 auto;
+    color: #1a1b22;
+    position: relative;
+    background-color: none;
+    border: 1px solid #1a1b22;
+    border-radius: 80px;
+    transition: opacity .4s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.github-commits__button-link:hover {
+  opacity: 0.9;
+}
+
+.github-commits__button-link:active{
+  opacity: 0.6;
+}
+
+

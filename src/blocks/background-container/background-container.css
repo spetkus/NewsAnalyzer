@@ -1,0 +1,21 @@
+.background-container{
+    position: relative;
+    background-image: url('../../images/header-image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .background-container {
+    padding-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .background-container {
+    padding-bottom: 32px;
+  }
+}

@@ -1,0 +1,27 @@
+.title-block__link{
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  text-decoration: none;
+  display: flex;
+}
+
+.title-block__link::after{
+  content: url('../../../images/back.svg');
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  transition: all .4s ease-out;
+}
+.title-block__link:hover::after{
+  transform: translateX(5px);
+}
+
+@media only screen and (max-width: 710px) {
+  .title-block__link{
+    margin-top: 16px;
+  }
+}

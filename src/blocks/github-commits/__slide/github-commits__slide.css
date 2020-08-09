@@ -1,0 +1,23 @@
+.github-commits__slide {
+  width: 400px;
+  display: block;
+  flex-shrink: 0;
+  height: 300px;
+  position: relative;
+  transition-property: transform, -webkit-transform;
+}
+
+@media only screen and (max-width: 1025px) {
+  .github-commits__slide {
+    width: 336px;
+    height: 254px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .github-commits__slide {
+    width: 288px;
+    height: 276px;
+  }
+}
+

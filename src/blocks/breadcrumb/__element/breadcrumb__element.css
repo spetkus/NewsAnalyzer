@@ -1,0 +1,18 @@
+.breadcrumb__element {
+  font-family: 'Roboto', 'Helvetica NeueCyr', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #C6C6C8;
+}
+
+
+.breadcrumb__element::after {
+  padding: 8px;
+  color: #C6C6C8;
+  content: "/\00a0";
+}
+
+.breadcrumb__element:last-of-type::after {
+  content: none;
+}
