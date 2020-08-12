@@ -1,6 +1,7 @@
 .github-card__person-image{
   width: 64px;
   height: 64px;
+  border-radius: 100%;
 }
 
 @media only screen and (max-width: 1025px) {
