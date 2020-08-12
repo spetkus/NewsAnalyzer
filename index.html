@@ -8,7 +8,7 @@
   <meta name="description" content="News Analyzer - Дипломная работа в Яндекс.Практикум" />
   <title>NewsAnalyzer - Главная</title>
   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-  <link rel="stylesheet" href="css/main.ec001356d2f874d091c8.css" />
+  <link rel="stylesheet" href="css/main.7b8f6b259319761142f7.css" />
 </head>
 
 <body>
@@ -42,24 +42,26 @@
           Введите в поиске любую тему и узнайте, насколько популярной она была
           в новостях за прошедшую неделю.
         </p>
-        <form class="search__form">
+        <form name="search" class="search__form" novalidate>
           <input
+            id="searchvalue"
             type="text"
             name="text"
             class="search__input"
             placeholder="Введите тему новости"
-            minlength="4"
+            minlength="3"
             maxlength="20"
+            pattern="^[а-яА-ЯёЁ0-9\s]+$"
             required />
-          <span class="search__form-error">Введите запрос от 4 до 20 символов</span>
-          <button type="button" class="button search__button">Искать</button>
+          <span id="searchvalue-error" class="search__form-error"></span>
+          <button type="submit" class="button search__button">Искать</button>
         </form>
       </section>
     </div>
 
     <!-- NEWS PRELOADER BLOCK-->
 
-    <section class="news news_visible_none">
+    <section class="news news_visible_none" id="preloader">
       <i class="news__preloader"></i>
       <h2 class="text-paragraph news__description">
         Идет поиск новостей...
@@ -68,145 +70,25 @@
 
     <!-- NEWS NOT FOUND BLOCK-->
 
-    <section class="news news_visible_none">
+    <section class="news news_visible_none" id="error">
       <i class="news__not-found"></i>
-      <h2 class="news__title-result">Ничего не найдено</h2>
+      <h2 class="news__title-result">
+      </h2>
       <p class="text-paragraph news__description">
-        К сожалению по вашему запросу ничего не найдено.
       </p>
     </section>
 
     <!-- NEWS RESULT BLOCK-->
 
-    <main class="news">
+    <main class="news news_visible_none" id="news">
 
       <div class="grid-width title-block">
         <h2 class="text-title">Результаты поиска</h2>
         <a class="title-block__link" href="./analytics.html">Посмотреть аналитику</a>
       </div>
 
-      <ul class="grid-width news__list">
-        <li>
-          <a class="news-card" href="https://lenta.ru/" target="_blank">
-            <img
-              class="news-card__image"
-              src="./images/01.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                Национальное достояние – парки
-              </h3>
-              <p class="news-card__text">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад
-                здесь начала складываться система национальных парков –
-                охраняемых территорий, где и сегодня каждый может
-                приобщиться к природе.
-              </p>
-              <p class="news-card__media">Лента.ру</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="news-card" href="https://meduza.io/" target="_blank">
-            <img
-              class="news-card__image"
-              src="./images/02.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                Лесные огоньки: история одной фотографии
-              </h3>
-              <p class="news-card__text">
-                Фотограф отвлеклась от освещения суровой политической
-                реальности Мексики, чтобы запечатлеть ускользающую красоту
-                одного из местных чудес природы.
-              </p>
-              <p class="news-card__media">Медуза</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="news-card" href="https://ria.ru/" target="_blank">
-            <img
-              class="news-card__image"
-              src="./images/03.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-              </h3>
-              <p class="news-card__text">
-                Знаменитый фотограф снимает первозданные леса России,
-                чтобы рассказать о необходимости их сохранения. В этот раз
-                он отправился в Двинско-Пинежскую тайгу, где...
-              </p>
-              <p class="news-card__media">Риа</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="news-card" href="https://zen.yandex.ru/" target="_blank">
-            <img
-              class="news-card__image"
-              src="./images/04.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                Национальное достояние – парки
-              </h3>
-              <p class="news-card__text">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад
-                здесь начала складываться система национальных парков –
-                охраняемых территорий, где и сегодня каждый может
-                приобщиться к природе.
-              </p>
-              <p class="news-card__media">Дзен</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="news-card" href="https://www.afisha.ru/" target="_blank">
-            <img
-              class="news-card__image"
-              src="./images/05.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                Лесные огоньки: история одной фотографии
-              </h3>
-              <p class="news-card__text">
-                Фотограф отвлеклась от освещения суровой политической
-                реальности Мексики, чтобы запечатлеть ускользающую красоту
-                одного из местных чудес природы.
-              </p>
-              <p class="news-card__media">Афиша</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="news-card" href="https://zona.media/" target="_blank">
-            <img class="news-card__image" src="./images/06.png"
-              alt="Фотография превью новости" />
-            <div class="news-card__description">
-              <p class="news-card__date">2 августа, 2019</p>
-              <h3 class="news-card__name">
-                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-              </h3>
-              <p class="news-card__text">
-                Знаменитый фотограф снимает первозданные леса России,
-                чтобы рассказать о необходимости их сохранения. В этот раз
-                он отправился в Двинско-Пинежскую тайгу, где...
-              </p>
-              <p class="news-card__media">Медиазона</p>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <ul class="grid-width news__list"></ul>
+      
       <button class="button news__button">Показать еще</button>
     </main>
 
@@ -273,7 +155,7 @@
       </ul>
     </footer>
   </div>
-  <script src="js/main.31aa8026d22272c4a9f8.js"></script>
+  <script src="js/main.634f6ecfe8f16571ffe7.js"></script>
 </body>
 
 </html>
