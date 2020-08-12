@@ -1,6 +1,6 @@
 {
   "name": "news_analyzer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Study diploma Front-end project (NewsAnalyzer)",
   "main": "src/pages/index.js",
   "scripts": {
