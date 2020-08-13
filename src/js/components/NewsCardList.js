@@ -1,10 +1,11 @@
 export default class NewsCardList {
 
-    constructor(container, browserStorage, addNews, buttonNextNews) {
+    constructor(container, browserStorage, addNews, buttonNextNews, countRenderNews) {
         this.container = container;
         this.browserStorage = browserStorage;
         this.addNews = addNews;
         this.buttonNextNews = buttonNextNews;
+        this.countRenderNews = countRenderNews;
         this.countNews = 0;
         this.preQuery = '';
     }
@@ -22,7 +23,7 @@ export default class NewsCardList {
         this.query = this.browserStorage.getInfo("query");
         this._resetCount();
         this.dataCount = this.data.length;
-        this.data.splice(this.countNews, 3).forEach((item) => {
+        this.data.splice(this.countNews, this.countRenderNews).forEach((item) => {
             this.countNews = this.countNews + 1;
             this._nextNewsButtonHandler();
             this._card = this.addNews(item);

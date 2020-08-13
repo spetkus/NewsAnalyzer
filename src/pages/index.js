@@ -7,6 +7,7 @@ import {
   RESULT_BLOCKS,
   RESULT_ERROR_MESSAGE,
   NEWS_LIST,
+  COUNT_RENDER_NEWS,
   BUTTON_NEXT_NEWS
 } from "../js/constants/NEWS_SETTINGS.js";
 import dateFormattingInRussified from "../js/utils/dateFormattingInRussified.js";
@@ -40,7 +41,7 @@ function addNews(datas) {
 
 /*  Инициализация NewsCardList  */
 
-const container = new NewsCardList(NEWS_LIST, browserStorage, addNews, BUTTON_NEXT_NEWS);
+const container = new NewsCardList(NEWS_LIST, browserStorage, addNews, BUTTON_NEXT_NEWS, COUNT_RENDER_NEWS);
 
 
 /*  Инициализация SearchInput  */
