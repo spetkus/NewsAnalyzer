@@ -33,11 +33,13 @@ export default class Statistics {
 
     _renderCountKeywordInTitles() {
         let countNews = 0;
-        for (let i = 0; i <= this.data.totalResults; i++) {
-            if (this.data[i]?.title) {
-                this.data[i].title.toLowerCase().includes(this.data.query.toLowerCase()) ? countNews++ : false;
+
+        this.data.forEach((item) => {
+            if (item?.title) {
+                item.title.toLowerCase().includes(this.data.query.toLowerCase()) ? countNews++ : false;
             };
-        }
+        });
+
         this.countTitle.textContent = countNews;
     }
 
