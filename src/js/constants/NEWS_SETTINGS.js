@@ -5,7 +5,7 @@ const NEWS_API_SETTINGS = {
   url: new URL(
     NODE_ENV === "development" ?
     "https://newsapi.org/v2/everything" :
-    "https://praktikum.tk/news/v2/everything"
+    "https://nomoreparties.co/news/v2/everything"
   ),
   headers: {
     Accept: "/",
